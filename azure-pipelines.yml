@@ -11,7 +11,7 @@ pool:
 
 variables:
 - group: appservices4711
-- imageName: 
+- name: imageName 
   value: 'demoapp-base:$(build.buildId)'
   
 steps:
