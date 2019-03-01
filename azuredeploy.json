@@ -160,10 +160,10 @@
       "type": "microsoft.insights/components",
       "name": "[variables('applicationInsightsName')]",
       "apiVersion": "2014-08-01",
-      "location": "East US",
+      "location": "[variables('location')]",
       "kind": "other",
       "properties": {
-          "ApplicationId": "[variables('applicationInsightsName')",    
+          "ApplicationId": "[variables('applicationInsightsName')]",    
           "Application_Type": "other"
       }
     },
@@ -311,7 +311,7 @@
           "name": "Managed_Basic",
           "tier": "Managed"
       },
-      "location": "westcentralus",
+      "location": "[variables('location')]",
       "properties": {
           "adminUserEnabled": true
       }
@@ -322,7 +322,7 @@
       "apiVersion": "2017-12-01",
       "location": "[variables('location')]",
       "sku": {
-        "name": "MYSQLB50",
+        "name": "B_Gen5_1",
         "tier": "Basic",
         "capacity": 50
       },
@@ -366,7 +366,7 @@
       "apiVersion": "2017-12-01",
       "location": "[variables('location')]",
       "sku": {
-          "name": "PGSQLB50",
+          "name": "B_Gen5_1",
           "tier": "Basic",
           "capacity": 50
       },
