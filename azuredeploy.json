@@ -323,8 +323,7 @@
       "location": "[variables('location')]",
       "sku": {
         "name": "B_Gen5_1",
-        "tier": "Basic",
-        "capacity": 50
+        "tier": "Basic"
       },
       "properties": {
         "administratorLogin": "[parameters('databaseAdminLoginName')]",
@@ -367,8 +366,7 @@
       "location": "[variables('location')]",
       "sku": {
           "name": "B_Gen5_1",
-          "tier": "Basic",
-          "capacity": 50
+          "tier": "Basic"
       },
       "properties": {
           "administratorLogin": "[parameters('databaseAdminLoginName')]",
