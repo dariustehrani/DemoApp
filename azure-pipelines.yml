@@ -13,5 +13,10 @@ variables:
   imageName: 'demoapp-base:$(build.buildId)'
 
 steps:
-- script: docker build -f Dockerfile -t $(imageName) .
+- script: docker build -t $(dockerId).azurecr.io/$(imageName) .
   displayName: 'docker build'
+- script: docker login -u $(dockerId) -p $(pswd) $(dockerId).azurecr.io
+  displayName: 'docker login'
+- script: docker push $(dockerId).azurecr.io/$(imageName)
+  displayName: 'docker push'
+
