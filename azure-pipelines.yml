@@ -10,9 +10,10 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  group: appservices4711
-  imageName: 'demoapp-base:$(build.buildId)'
-
+- group: appservices4711
+- imageName: 
+  value: 'demoapp-base:$(build.buildId)'
+  
 steps:
 - script: docker build -t $(dockerId).azurecr.io/$(imageName) .
   displayName: 'docker build'
