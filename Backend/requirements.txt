@@ -1,3 +1,4 @@
+python-dateutil
 flask-script
 flask_restful
 social-auth-app-flask-peewee
