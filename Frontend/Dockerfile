@@ -2,6 +2,7 @@
 FROM node:alpine
 
 RUN npm install -g @angular/cli
+RUN ng update @angular/cli --migrate-only --from=1.2.5
 
 # Copy the current directory contents into the container at /code
 ADD . /code
