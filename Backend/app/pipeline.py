@@ -1,8 +1,6 @@
 from social_core.pipeline.partial import partial
 from .models.profile import Profile
 from .models.position import Position
-import dateutil
-from jsonfield import JSONField
 
 @partial
 def require_email(strategy, details, user=None, is_new=False, *args, **kwargs):

@@ -1,8 +1,7 @@
 # Use an official node runtime as a parent image
 FROM node:alpine
 
-# RUN npm install -g @angular/cli
-RUN npm install
+RUN npm install -g @angular/cli
 
 # Copy the current directory contents into the container at /code
 ADD . /code
@@ -11,6 +10,8 @@ ADD . /code
 WORKDIR /code
 
 # Install any needed packages specified in package.json
+RUN npm install
+RUN npm audit fix
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
