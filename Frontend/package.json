@@ -24,7 +24,8 @@
     "core-js": "^2.4.1",
     "rxjs": "^6.4.0",
     "zone.js": "^0.8.14",
-    "rxjs-compat": "^6.0.0-rc.0"
+    "rxjs-compat": "^6.0.0-rc.0",
+    "typescript": "^3.2.4"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.13.4",
@@ -45,7 +46,6 @@
     "karma-jasmine-html-reporter": "^1.4.0",
     "protractor": "^5.4.2",
     "ts-node": "~8.0.2",
-    "tslint": "~5.13.1",
-    "typescript": "^3.2.4"
+    "tslint": "~5.13.1"
   }
 }
