@@ -24,9 +24,7 @@ WORKDIR /app/Frontend
 RUN npm install
 
 ### Nginx
-RUN apk add --update --no-cache build-base linux-headers \
-    && pip install uwsgi \
-    && mkdir /var/log/uwsgi
+RUN apk add --update --no-cache wsgi-python3
 COPY backend_uwsgi.ini /app/Backend/uwsgi.ini
 COPY nginx.conf /etc/nginx/nginx.conf
 
