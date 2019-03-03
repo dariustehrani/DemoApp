@@ -1,6 +1,7 @@
 from social_core.backends.google import GooglePlusAuth
 from social_core.backends.utils import load_backends
-
+import dateutil
+from jsonfield import JSONField
 
 def is_authenticated(user):
     if callable(user.is_authenticated):

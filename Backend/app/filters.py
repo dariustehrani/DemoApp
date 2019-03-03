@@ -1,7 +1,8 @@
 import re
 
 from social_core.backends.oauth import OAuthAuth
-
+import dateutil
+from jsonfield import JSONField
 
 NAME_RE = re.compile(r'([^O])Auth')
 
