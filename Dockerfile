@@ -22,6 +22,7 @@ RUN npm install -g @angular/cli
 ADD ./Frontend /app/Frontend
 WORKDIR /app/Frontend
 RUN npm install
+RUN npm audit fix
 
 ### Nginx
 RUN apk add --update --no-cache uwsgi-python3
