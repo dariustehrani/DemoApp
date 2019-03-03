@@ -2,7 +2,7 @@
 from flask_script import Server, Manager, Shell
 from app import app, database
 import dateutil
-import simplejson as json
+from jsonfield import JSONField
 
 manager = Manager(app)
 manager.add_command('runserver', Server())
