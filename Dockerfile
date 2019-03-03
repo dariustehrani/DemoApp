@@ -1,4 +1,4 @@
-FROM appsvc/demoapp-base:latest
+FROM appservices4711.azurecr.io/demoapp-base:reworked
 
 ### SSH Server
 RUN echo "root:Docker!" | chpasswd \
