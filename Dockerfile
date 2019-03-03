@@ -27,6 +27,7 @@ RUN npm install
 RUN apk add --update --no-cache uwsgi-python3
 COPY backend_uwsgi.ini /app/Backend/uwsgi.ini
 COPY nginx.conf /etc/nginx/nginx.conf
+RUN mkdir -p /run/nginx
 
 EXPOSE 2222 80 
 
