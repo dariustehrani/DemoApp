@@ -1,6 +1,5 @@
 python-dateutil
-simplejson
-jsonfield
+django-jsonfield
 flask-script
 flask_restful
 social-auth-app-flask-peewee

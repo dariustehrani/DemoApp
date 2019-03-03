@@ -80,7 +80,6 @@
     ],
     "prefer-const": true,
     "quotemark": [
-      "quotemark": [
         true,
         "single"
       ],
@@ -140,4 +139,3 @@
       "invoke-injectable": true
     }
   }
-  
